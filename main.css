@@ -4,10 +4,22 @@ green: #69FCD0
 */
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
+@font-face {
+  font-family: synthy;
+  /* src: url(POLYA.otf); */
+  src:url(Road_Rage.otf);
+}
+
+html {
+  background-image: url(syn-view.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 body {
  display: flex;
  justify-content: center;
- background-color: #ebebeb;
+ /* background-color: #ebebeb; */
 }
 .container {
  display: flex;
@@ -16,10 +28,11 @@ body {
  text-align: center;
  width: 800px;
  height: 500px;
- background-color: #585858;
+ background-color: rgb(0, 0, 0, 0.6);
  flex-direction: column;
  border-radius: 7px;
- border: 1px solid #69FCD0;
+ /* border: 1px solid crimson; */
+ box-shadow: 0 0 20px black ;
 }
 .flex-row {
 display: flex;
@@ -67,10 +80,23 @@ border: none;
 
 #company-name {
  border-bottom: 3px dashed #ebebeb;
- font-family: 'Poppins', sans-serif;
- color: white;
+ font-family: "synthy", sans-serif;
  font-size: 5em;
+ color: crimson;
+ text-shadow: 0 0 20px #ff4343;
+ background: url('126419.jpg') no-repeat;
+ -webkit-background-clip: text;
+ text-shadow:
+   -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+
+     /* inactive for now*/
+     /* color: white; */
+     /* -webkit-text-fill-color: transparent; */
 }
+
 .message-alerts {
  position: relative;
  width: 100vw;
