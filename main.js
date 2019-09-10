@@ -25,7 +25,7 @@ const over21 = function(){
             setTimeout(
                     function(){
                     message_alert.style.visibility = "hidden";
-                    }, 3000);
+                  }, 3000);
 }
 
 const ageGate = function(){

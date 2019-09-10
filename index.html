@@ -8,19 +8,21 @@
 </head>
 <body>
   <div class="container">
-  <h1 id="company-name">Synthwave Brew</h1>
-  <p class="verify-age-text">Please enter your date of birth. You must be <span class="bold">21</span> to enter this website.</p>
-  <div class="flex-row">
-    <input type="number" min="1" max="12" step="1" class="input-dates" placeholder="mm" autocomplete='off' autofocus required>
-    <input type="number" min="1" max="31"          class="input-dates" placeholder="dd" autocomplete='off' required>
-    <input type="number" min="1890" max="2019"     class="input-dates" id="date-year"   autocomplete='off' placeholder="yyyy" required>
-  </div>
-  <div class="row-3">
-  <input type="submit" value="ENTER" id="submit-button">
-</div>
+    <h1 id="company-name">Synthwave Brew</h1>
+    <p class="verify-age-text">Please enter your date of birth. You must be <span class="bold">21</span> to enter this website.</p>
 
-<div class="message-alerts"></div>
-</div>
+    <div class="flex-row">
+      <input type="number" min="1" max="12" step="1" class="input-dates" placeholder="MM" autocomplete='off' autofocus required>
+      <input type="number" min="1" max="31"   step="1"       class="input-dates" placeholder="DD" autocomplete='off' required>
+      <input type="number" min="1890" max="2019"   step="1"  class="input-dates" id="date-year" placeholder="YYYY"  autocomplete='off' required>
+    </div>
+
+    <div class="row-3">
+      <input type="submit" value="ENTER" id="submit-button">
+    </div>
+
+    <div class="message-alerts"></div>
+  </div>
 
 <script src="main.js" charset="utf-8"></script>
 </body>
